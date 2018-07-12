@@ -2,9 +2,10 @@
 * __Token symbol__: METH
 * __Deployed Contract Address__: 0x41bD17Ee4155Eb79ed77d7e197B006411074601B
 * __Contract JSON__: see metha.json
-* __Logo__: ![Metha logo](metha_logo_small.png)
+* __Logo__:
+![Metha logo](metha_logo_small.png)
 
-## What is MetaEth?
+## What is Metha?
 It is an ERC20 token that represents 0.01 ETH. It can be converted to and from ETH but also traded and exchanged natively. At first sight, this seems to have no purpose but it actually can scientifically answer some questions about the Ethereum blockchain and smart contract security. Read on.
 
 ## Why recreate Ehtereum on the Ethereum blockchain?
@@ -25,7 +26,7 @@ virtual machine, the bytecode compilation through solidity 0.4.19, the ERC20 pro
 
 ### Price of METH compared to ETH.
 The following image shows factors that influence the METH price:
-![Meth Price](meta_eth/price.png)
+![Meth Price](./price.png)
 The red arrow furthest to the right shows the contribution of the security decrease through the smart contract.
 The difference due to the fee price is estimated further below in the text. The increase in the utility depends, however,
 on multiple factors inclusing the domicile of the exchange, the regulations and others. No exact estimate can be given
