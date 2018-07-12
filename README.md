@@ -1,8 +1,8 @@
-# Mether - The Meta-Ethereum Token
+# Metha - The Meta-Ethereum Token
 * __Token symbol__: METH
-* __Deployed Contract Address__: METH
-* __Contract JSON__: ?
-* __Logo__: ![Mether logo](mether_logo_small.png)
+* __Deployed Contract Address__: 0x41bD17Ee4155Eb79ed77d7e197B006411074601B
+* __Contract JSON__: see metha.json
+* __Logo__: ![Metha logo](metha_logo_small.png)
 
 ## What is MetaEth?
 It is an ERC20 token that represents 0.01 ETH. It can be converted to and from ETH but also traded and exchanged natively. At first sight, this seems to have no purpose but it actually can scientifically answer some questions about the Ethereum blockchain and smart contract security. Read on.
@@ -32,7 +32,7 @@ on multiple factors inclusing the domicile of the exchange, the regulations and 
 at this time but it is expected to be lower than the influence due to the security in the beginning.
 
 ### Meta^n
-Just think about the posibilities of Meta-Mether or even higher derivatives.
+Just think about the posibilities of Meta-Metha or even higher derivatives.
 
 ## Why not create another coin on Ethereum or Ethereum on another
 blockchain?  This refers to a peg of an blockchain to a token on,
@@ -48,5 +48,12 @@ On METH a transfer of token costs 36414 gas for transaction cost and 13542 gas f
 The payment is therefore about 2.5 times more expensice but as of 2018-07-10 about 0.0005 ETH which is about $0.24.
 The fees are thus still acceptable low to send METH.
 
+## Fees, security and owner rights
+There are __no fees__ except for the blockchain
+gas. The owner cannot take away any of your METH or stop you from
+converting it into ETH. The contract guarantees that you will be able
+to convert back. The owner can only help if poor souls send tokens
+instead of ETH to the contract address.
+
 ## Smart contract code:
-https://github.com/cbaus/mether
+https://github.com/cbaus/metha

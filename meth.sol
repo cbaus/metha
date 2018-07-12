@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.24;
 
 
 // ----------------------------------------------------------------------------
@@ -62,7 +62,7 @@ contract Owned {
 
     event OwnershipTransferred(address indexed _from, address indexed _to);
 
-    function Owned() public {
+    constructor () public {
         owner = msg.sender;
     }
 
@@ -74,9 +74,10 @@ contract Owned {
     function transferOwnership(address _newOwner) public onlyOwner {
         newOwner = _newOwner;
     }
+
     function acceptOwnership() public {
         require(msg.sender == newOwner);
-        OwnershipTransferred(owner, newOwner);
+        emit OwnershipTransferred(owner, newOwner);
         owner = newOwner;
         newOwner = address(0);
     }
@@ -84,9 +85,9 @@ contract Owned {
 
 
 
-contract Mether is ERC20Interface, Owned {
+contract Metha is ERC20Interface, Owned {
     using SafeMath for uint;
-    string public constant name = "Mether";
+    string public constant name = "Metha";
     string public constant symbol = "METH";
     uint8 public constant decimals = 18;  // 18 is the most common number of decimal places
     uint public _totalSupply = 0;
@@ -99,7 +100,7 @@ contract Mether is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function Mether() public {
+    constructor () public {
     }
 
     // ------------------------------------------------------------------------
@@ -111,7 +112,7 @@ contract Mether is ERC20Interface, Owned {
 
 
     // ------------------------------------------------------------------------
-    // Convert you Eth to Mether
+    // Convert you Eth to Metha
     // ------------------------------------------------------------------------
     function convertToMeth() payable public {
         uint tokens = msg.value * eth_meth;
@@ -165,7 +166,7 @@ contract Mether is ERC20Interface, Owned {
     returns (bool success) {
         balances[msg.sender] = balances[msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
-        Transfer(msg.sender, to, tokens);
+        emit Transfer(msg.sender, to, tokens);
         return true;
     }
 
@@ -182,7 +183,7 @@ contract Mether is ERC20Interface, Owned {
     onlyPayloadSize(2 * 32)
     returns (bool success) {
         allowed[msg.sender][spender] = tokens;
-        Approval(msg.sender, spender, tokens);
+        emit Approval(msg.sender, spender, tokens);
         return true;
     }
 
@@ -202,7 +203,7 @@ contract Mether is ERC20Interface, Owned {
         balances[from] = balances[from].sub(tokens);
         allowed[from][msg.sender] = allowed[from][msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
-        Transfer(from, to, tokens);
+        emit Transfer(from, to, tokens);
         return true;
     }
 
@@ -226,7 +227,7 @@ contract Mether is ERC20Interface, Owned {
     onlyPayloadSize(3 * 32)
     returns (bool success) {
         allowed[msg.sender][spender] = tokens;
-        Approval(msg.sender, spender, tokens);
+        emit Approval(msg.sender, spender, tokens);
         ApproveAndCallFallBack(spender).receiveApproval(msg.sender, tokens, this, data);
         return true;
     }
