@@ -4,8 +4,9 @@
 * __Contract JSON__: [metha.json](https://raw.githubusercontent.com/cbaus/metha/3c53ecb89eb03a5421a8992e42ba9791c5953a0c/metha.json)
 * __Contract code__: [meth.sol](https://raw.githubusercontent.com/cbaus/metha/3c53ecb89eb03a5421a8992e42ba9791c5953a0c/meth.sol)
 * __Traded on Exchanges__: [EtherDelta](https://etherdelta.com/#0x364aa6b380cb4f9cee6711326d6b33a81ce1998c-ETH)
-* __Logo__:<br/>
+* __Logo__ [[As png]](metha_logo.png) [[As svg]](metha_logo.svg):<br/>
 ![Metha logo](metha_logo_small.png)
+
 
 ## What is Metha?
 It is an ERC20 token that represents 0.01 ETH. It can be converted to and from ETH but also traded and exchanged natively. At first sight, this seems to have no purpose but it actually can scientifically answer some questions about the Ethereum blockchain and smart contract security. Read on.
