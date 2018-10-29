@@ -3,6 +3,7 @@
 * __Deployed Contract Address__: [__Main Net__](https://etherscan.io/address/0x364aa6b380cb4f9cee6711326d6b33a81ce1998c) / [Testing on Rinkeby](https://rinkeby.etherscan.io/address/0x41bD17Ee4155Eb79ed77d7e197B006411074601B)
 * __Contract JSON__: [metha.json](https://raw.githubusercontent.com/cbaus/metha/3c53ecb89eb03a5421a8992e42ba9791c5953a0c/metha.json)
 * __Contract code__: [meth.sol](https://raw.githubusercontent.com/cbaus/metha/3c53ecb89eb03a5421a8992e42ba9791c5953a0c/meth.sol)
+* __Traded on Exchanges__: [EtherDelta](https://etherdelta.com/#0x364aa6b380cb4f9cee6711326d6b33a81ce1998c-ETH)
 * __Logo__:<br/>
 ![Metha logo](metha_logo_small.png)
 
